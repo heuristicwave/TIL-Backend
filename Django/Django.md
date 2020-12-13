@@ -56,8 +56,20 @@ URL 패턴별로 이름을 지정할 수 있고, 패턴 그룹에 대해 namespa
 
 - 함수형 뷰(Function-based view)
 
+  ```python
+  def post_list(request):
+  	return HTTPResponse('Call post_list')
+  ```
+
 - 클래스형 뷰(Class-based view)
 
+  ```python
+  class PostListView(TemplateView):
+  	template_name = 'blog/post_list.html'
+  
+  post_list = PostListView.as_view()
+  ```
+  
   장고가 제공하는 제네릭 뷰 사용 가능(재활용 및 확장성 측면 유리)
 
 > 클래스형 뷰가 간단한 경우 views.py에 코딩할 필요 없이 URLconf에서 뷰 및 뷰 처리에 필요한 파라미터를 모두 지정할 수 있다.
