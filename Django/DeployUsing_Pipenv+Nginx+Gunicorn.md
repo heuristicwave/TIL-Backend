@@ -89,7 +89,10 @@ server {
 }
 ```
 > [nginx 주요 개념](https://velog.io/@yvvyoon/flask-nginx-gunicorn-1)
+> <br>
 > nginx : [root vs alias](https://ohgyun.com/556)
+> <br>
+> [nginx & aws](https://m.blog.naver.com/PostView.nhn?blogId=93immm&logNo=221304593384&proxyReferer=https:%2F%2Fwww.google.com%2F)
 
 <br>
 
