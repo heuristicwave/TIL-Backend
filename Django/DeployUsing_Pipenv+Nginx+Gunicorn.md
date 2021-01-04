@@ -31,7 +31,7 @@ After=network.target
 
 [Service]
 User=ec2-user
-Group=www-data
+Group=ec2-user
 WorkingDirectory=/home/ec2-user/django/repo
 ExecStart=/usr/local/bin/pipenv run gunicorn --workers 3 \
         <wsgi가 위치한 폴더>.wsgi:application --bind 0.0.0.0:8000
