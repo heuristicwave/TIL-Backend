@@ -75,8 +75,8 @@ server {
         charset utf-8;
 
         location / {
-        		include proxy_params;
-        		proxy_pass http://0.0.0.0:8000
+                include proxy_params;
+                proxy_pass http://0.0.0.0:8000
         }
 
         location /static/ {
@@ -88,6 +88,8 @@ server {
         }
 }
 ```
+> [nginx 주요 개념](https://velog.io/@yvvyoon/flask-nginx-gunicorn-1)
+> nginx : [root vs alias](https://ohgyun.com/556)
 
 <br>
 
