@@ -41,6 +41,9 @@ $ mv manage.py ../	# 밖으로 이동
 $ mv config ../		# 내부에 있는 config 밖으로
 # 이후 가장 밖에 있는 config 폴더 제거
 ```
+> **startproject vs startapp**
+>
+> 장고 프로젝트를 처음 시작할 때는 `startproject` 이후, 프로젝트 안에서 새 앱을 추가할 때는 `startapp`
 
 Changing a settings.py
 
