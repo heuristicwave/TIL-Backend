@@ -14,7 +14,6 @@
 
 2. gunicorn 작동확인
 
-3. Port Redirection
 
 <br>
 
@@ -92,6 +91,9 @@ server {
 > <br>
 > nginx : [root vs alias](https://ohgyun.com/556)
 > <br>
+>
+> `include proxy_params`의 경우 `/etc/nginx/proxy_params` 공간에 프록시 헤더를 기록해 둬야 한다. (다음 링크 참고)
+>
 > [nginx & aws](https://m.blog.naver.com/PostView.nhn?blogId=93immm&logNo=221304593384&proxyReferer=https:%2F%2Fwww.google.com%2F)
 
 <br>
@@ -119,6 +121,52 @@ ps -ef
 ps
 pkill gunicorn
 ```
+
+
+
+{::options parse_block_html="true" /}
+
+<details><summary markdown="span">dotenv 관련 에러 해결하기</summary>
+- gunicorn 을 활용해 연결 할 경우
+  ```shell
+  $ pip uninstall python-dotenv 
+	$ pip install dotenv
+  ```
+
+
+  ```sh
+  $ pip uninstall dotenv
+  $ pip install python-dotenv 
+  ```
+
+  
+
+- docker + nginx + gunicorn 을 활용해 rds에 연결 할 경우
+
+  ```sh
+  $ pip uninstall dotenv
+  $ pip install python-dotenv 
+  ```
+
+$ pip uninstall python-dotenv 
+$ pip install dotenv
+
+- docker + nginx + gunicorn 을 활용해 rds에 연결 할 경우
+
+  ```sh
+  $ pip uninstall dotenv
+  $ pip install python-dotenv 
+  ```
+
+
+
+</details>
+
+<br/>
+
+{::options parse_block_html="false" /}
+
+
 
 <br>
 
